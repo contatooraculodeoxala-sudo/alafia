@@ -5,7 +5,9 @@ function getToken() {
 
 async function req(method: string, path: string, body?: unknown) {
   const token = getToken()
-  const res = await fetch(path, {
+  const res = await const BASE_URL = "https://alafia-api.contato-oraculodeoxala.workers.dev"
+
+const res = await fetch(`${BASE_URL}${path}`, {
     method,
     headers: {
       'Content-Type': 'application/json',
@@ -21,7 +23,14 @@ async function req(method: string, path: string, body?: unknown) {
 }
 
 export const api = {
-  get: (path: string) => req('GET', `/api${path}`),
+  const BASE_URL = 'https://alafia-api.contato-oraculodeoxala.workers.dev'
+
+export const api = {
+  get: (path: string) => req('GET', `${BASE_URL}${path}`),
+  post: (path: string, body: unknown) => req('POST', `${BASE_URL}${path}`, body),
+  put: (path: string, body: unknown) => req('PUT', `${BASE_URL}${path}`, body),
+  delete: (path: string) => req('DELETE', `${BASE_URL}${path}`),
+},
   post: (path: string, body: unknown) => req('POST', `/api${path}`, body),
   put: (path: string, body: unknown) => req('PUT', `/api${path}`, body),
   delete: (path: string) => req('DELETE', `/api${path}`),
