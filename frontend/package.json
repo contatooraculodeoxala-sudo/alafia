@@ -11,6 +11,7 @@
     "@tailwindcss/postcss": "^4.2.2",
     "lucide-react": "^1.8.0",
     "next": "latest",
+    "papaparse": "^5.5.3",
     "react": "latest",
     "react-dom": "latest",
     "recharts": "^3.8.1"
