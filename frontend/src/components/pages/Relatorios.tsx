@@ -147,7 +147,7 @@ export function Relatorios() {
             <div className="flex items-center gap-4">
               <ResponsiveContainer width="50%" height={180}>
                 <PieChart>
-                  <Pie data={origens} dataKey="total" nameKey="origem" cx="50%" cy="50%" outerRadius={70} label={({ percent }) => `${(percent * 100).toFixed(0)}%`} labelLine={false}>
+                  <Pie data={origens} dataKey="total" nameKey="origem" cx="50%" cy="50%" outerRadius={70} label={({ percent }) => `${((percent ?? 0) * 100).toFixed(0)}%`} labelLine={false}>
                     {origens.map((_, i) => <Cell key={i} fill={CORES[i % CORES.length]} />)}
                   </Pie>
                   <Tooltip />
