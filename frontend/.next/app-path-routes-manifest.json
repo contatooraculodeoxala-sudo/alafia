@@ -1,0 +1,14 @@
+{
+  "/_not-found/page": "/_not-found",
+  "/configuracoes/page": "/configuracoes",
+  "/financeiro/page": "/financeiro",
+  "/trabalhos/page": "/trabalhos",
+  "/marketing/page": "/marketing",
+  "/equipe/page": "/equipe",
+  "/estoque/page": "/estoque",
+  "/consultas/page": "/consultas",
+  "/page": "/",
+  "/relatorios/page": "/relatorios",
+  "/clientes/page": "/clientes",
+  "/cadastro/page": "/cadastro"
+}
