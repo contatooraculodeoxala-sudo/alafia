@@ -1,14 +1,14 @@
 {
   "/_not-found/page": "/_not-found",
   "/configuracoes/page": "/configuracoes",
-  "/financeiro/page": "/financeiro",
-  "/trabalhos/page": "/trabalhos",
-  "/marketing/page": "/marketing",
-  "/equipe/page": "/equipe",
-  "/estoque/page": "/estoque",
   "/consultas/page": "/consultas",
-  "/page": "/",
-  "/relatorios/page": "/relatorios",
+  "/equipe/page": "/equipe",
+  "/financeiro/page": "/financeiro",
+  "/marketing/page": "/marketing",
   "/clientes/page": "/clientes",
+  "/estoque/page": "/estoque",
+  "/page": "/",
+  "/trabalhos/page": "/trabalhos",
+  "/relatorios/page": "/relatorios",
   "/cadastro/page": "/cadastro"
 }

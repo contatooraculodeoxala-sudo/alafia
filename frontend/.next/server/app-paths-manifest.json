@@ -1,14 +1,14 @@
 {
   "/_not-found/page": "app/_not-found/page.js",
   "/configuracoes/page": "app/configuracoes/page.js",
-  "/financeiro/page": "app/financeiro/page.js",
-  "/trabalhos/page": "app/trabalhos/page.js",
-  "/marketing/page": "app/marketing/page.js",
-  "/equipe/page": "app/equipe/page.js",
-  "/estoque/page": "app/estoque/page.js",
   "/consultas/page": "app/consultas/page.js",
-  "/page": "app/page.js",
-  "/relatorios/page": "app/relatorios/page.js",
+  "/equipe/page": "app/equipe/page.js",
+  "/financeiro/page": "app/financeiro/page.js",
+  "/marketing/page": "app/marketing/page.js",
   "/clientes/page": "app/clientes/page.js",
+  "/estoque/page": "app/estoque/page.js",
+  "/page": "app/page.js",
+  "/trabalhos/page": "app/trabalhos/page.js",
+  "/relatorios/page": "app/relatorios/page.js",
   "/cadastro/page": "app/cadastro/page.js"
 }
