@@ -25,27 +25,26 @@ async function req(method: string, path: string, body?: unknown) {
   return res.json()
 }
 
-// ✅ API PRINCIPAL (CORRIGIDA - SEM /api)
+// ✅ CORRETO (COM /api)
 export const api = {
-  get: (path: string) => req('GET', path),
-  post: (path: string, body: unknown) => req('POST', path, body),
-  put: (path: string, body: unknown) => req('PUT', path, body),
-  delete: (path: string) => req('DELETE', path),
+  get: (path: string) => req('GET', `/api${path}`),
+  post: (path: string, body: unknown) => req('POST', `/api${path}`, body),
+  put: (path: string, body: unknown) => req('PUT', `/api${path}`, body),
+  delete: (path: string) => req('DELETE', `/api${path}`),
 }
 
-// ✅ AUTH
+// ✅ AUTH (sem /api mesmo)
 export const authApi = {
   login: (email: string, senha: string) =>
     req('POST', '/auth/login', { email, senha }),
 }
 
-// ✅ API PÚBLICA (CORRIGIDA)
+// ✅ API pública (corrigida)
 export const publicApi = {
   cadastrar: (data: unknown) =>
-    req('POST', '/clientes/publico/cadastro', data),
+    req('POST', '/publico/clientes/publico/cadastro', data),
 }
 
-// (opcional) erro estruturado
 export class ApiError extends Error {
   constructor(
     public status: number,
